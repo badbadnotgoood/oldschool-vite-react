@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'CeraRoundProReg';
+  src: url('./media/font/TypeMates - CeraRoundPro-Regular.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'CeraRoundProMed';
+  src: url('./media/font/TypeMates - CeraRoundPro-Medium.otf')
+    format('opentype');
+}
+
+html {
+  min-height: 100vh;
+}
+
+body,
+body > div,
+body > div * {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'CeraRoundProReg';
+  font-weight: 400;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+body button {
+  cursor: pointer !important;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+reach-portal > div {
+  --rsbs-content-opacity: 1 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+[data-rsbs-footer] {
+  padding: unset;
+}
+
+[data-rsbs-header] {
+  display: none;
+}

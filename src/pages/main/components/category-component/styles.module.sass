@@ -1,0 +1,123 @@
+.container
+  width: 100%
+  border-bottom: 1px solid #eee
+  padding: 15px 0
+  -webkit-overflow-scrolling: touch
+  position: sticky
+  top: 121.5px
+  background-color: white
+  z-index: 2
+
+.content
+  min-width: 1280px
+  overflow-x: scroll
+  justify-content: flex-start
+
+  li
+    font-size: 20px
+    line-height: 25px
+    transition: 0.25s
+    white-space: nowrap
+
+  li:first-child
+    margin-left: 20px
+
+  li:last-child
+    margin-right: 20px
+
+.def__def
+  margin: 0 10px 0 5px
+
+.def__active
+  color: #c91e25
+
+.burg__def
+  background-color: #ffedee
+  color: #c91e25
+
+.burg__active
+  background-color: #c91e25
+  color: white
+
+.sand__def
+  background-color: #e9f9f3
+  color: #199869
+
+.sand__active
+  background-color: #199869
+  color: white
+
+.burg__def,
+.sand__def
+  padding: 10px 20px
+  border-radius: 40px
+  margin-right: 5px
+
+@media screen and (max-width: 1279px) and (min-width: 1000px)
+  .container
+    top: 71.5px
+
+  .content
+    min-width: 100%
+
+@media screen and (max-width: 999px) and (min-width: 768px)
+  .container
+    padding: 10px 0
+    top: 81.5px
+
+  .content
+    min-width: 100%
+
+    li
+      font-size: 18px
+      line-height: 20px
+
+  .burg__def,
+  .sand__def
+    border-radius: 35px
+
+@media screen and (max-width: 767px) and (min-width: 375px)
+  .container
+    padding: 6px 0
+    top: 71.5px
+
+  .content
+    min-width: 100%
+
+    li:first-child
+      margin-left: 18px
+
+    li:last-child
+      margin-right: 18px
+
+    li
+      font-size: 15px
+      line-height: 24px
+
+  .burg__def,
+  .sand__def
+    padding: 6px 12px
+    border-radius: 40px
+
+@media screen and (max-width: 374px) and (min-width: 0px)
+  .container
+    padding: 5px 0
+    top: 61.5px
+
+  .content
+    min-width: 100%
+
+    li:first-child
+      margin-left: 15px
+
+    li:last-child
+      margin-right: 15px
+
+    li
+      font-size: 12px
+      line-height: 20px
+
+  .burg__def,
+  .sand__def
+    padding: 5px 10px
+    border-radius: 35px

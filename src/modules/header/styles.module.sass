@@ -1,0 +1,31 @@
+.header
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  width: 100%
+  position: sticky
+  top: 0
+  padding: 25px 30px
+  min-height: 121.5px
+  border-bottom: 1.5px solid #eeeeee
+  background-color: white
+  z-index: 2
+
+@media screen and (max-width: 1279px) and (min-width: 1000px)
+  .header
+    min-height: 71.5px
+    padding: 7.5px 30px
+
+@media screen and (max-width: 999px) and (min-width: 768px)
+  .header
+    min-height: 81.5px
+    padding: 12.5px 30px
+
+@media screen and (max-width: 767px) and (min-width: 375px)
+  .header
+    min-height: 71.5px
+    padding: 10px 18px
+
+@media screen and (max-width: 374px) and (min-width: 0px)
+  .header
+    min-height: 61.5px
+    padding: 10px 15px

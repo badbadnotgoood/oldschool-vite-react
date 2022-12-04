@@ -1,0 +1,200 @@
+.section
+  flex-direction: column
+  align-items: flex-start
+  padding: 25px 20px
+
+.section__name
+  width: 255px
+  margin-left: 25px
+  margin-bottom: 40px
+
+.section__items
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  column-gap: 20px
+  row-gap: 25px
+
+.item
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  overflow: hidden
+  height: 365px
+  background-color: #fefefe
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05)
+  border-radius: 22px
+  min-width: 290px
+
+.item__image
+  width: 100%
+  height: 235px
+
+.item__info
+  flex: 1
+  width: 100%
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  padding: 25px 25px 20px
+
+.item__name
+  width: 100%
+
+.item__price
+  width: 100px
+
+.section__name, .item__name, .item__price
+  height: 25px
+  border-radius: 10px
+
+.section__name, .item__image, .item__name, .item__price
+  background-color: #eee
+  animation: blinking 1s infinite ease-in-out
+
+@keyframes blinking
+  0%
+    opacity: .7
+
+  50%
+    opacity: .3
+
+  100%
+    opacity: .7
+
+@media screen and (max-width: 1279px) and (min-width: 1000px)
+  .section__name
+    width: 200px
+    margin-left: 20px
+    margin-bottom: 25px
+
+  .item
+    min-width: 225px
+    height: 285px
+
+  .item__image
+    height: 185px
+
+  .item__info
+    padding: 16px 20px 14px
+
+  .section__name, .item__name, .item__price
+    height: 20px
+
+@media screen and (max-width: 999px) and (min-width: 768px)
+  .section
+    padding: 25px 26.5px
+
+  .section__name
+    width: 200px
+    margin-left: 20px
+    margin-bottom: 25px
+
+  .section__items
+    grid-template-columns: repeat(3, 1fr)
+
+  .item
+    min-width: 225px
+    height: 285px
+    border-radius: 18px
+
+  .item__image
+    height: 185px
+
+  .item__info
+    padding: 16px 20px 14px
+
+  .section__name, .item__name, .item__price
+    height: 20px
+
+@media screen and (max-width: 767px) and (min-width: 425px)
+  .section
+    padding: 15px
+
+  .section__name
+    width: 200px
+    margin-left: 14px
+    margin-bottom: 14px
+
+  .section__items
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 15px
+    row-gap: 15px
+
+  .item
+    min-width: 190px
+    height: 235px
+    border-radius: 14px
+
+  .item__image
+    height: 150px
+
+  .item__info
+    padding: 12px 16px 16px
+
+  .section__name, .item__name, .item__price
+    height: 17px
+    border-radius: 15px
+
+@media screen and (max-width: 424px) and (min-width: 375px)
+  .section
+    padding: 15px
+
+  .section__name
+    width: 200px
+    margin-left: 10px
+    margin-bottom: 15px
+
+  .section__items
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 15px
+    row-gap: 15px
+
+  .item
+    min-width: 165px
+    height: 205px
+    border-radius: 12px
+
+  .item__image
+    height: 135px
+
+  .item__info
+    padding: 12px 15px
+
+  .section__name, .item__name, .item__price
+    height: 15px
+    border-radius: 15px
+
+@media screen and ( max-width:  374px) and ( min-width: 0px)
+  .section
+    padding: 15px
+
+  .section__name
+    width: 130px
+    margin-left: 10px
+    margin-bottom: 15px
+
+  .section__items
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 10px
+    row-gap: 10px
+
+  .item
+    min-width: 140px
+    height: 175px
+    border-radius: 10px
+
+  .item__image
+    height: 115px
+
+  .item__info
+    padding: 10px 12px
+
+  .section__name
+    height: 15px
+    border-radius: 10px
+
+  .item__name, .item__price
+    height: 12px
+    border-radius: 10px
+  
